@@ -1,0 +1,22 @@
+# Meeting App Dependencies
+# Core GUI and system libraries
+opencv-python>=4.8.0
+psutil>=5.9.0
+pyautogui>=0.9.54
+pygetwindow>=0.0.9
+
+# Web automation
+selenium>=4.15.0
+requests>=2.31.0
+
+# OBS WebSocket integration
+obs-websocket-py>=0.5.3
+
+# Scheduling
+schedule>=1.2.0
+
+# Windows automation (Windows only)
+pywinauto>=0.6.8
+
+# Additional utilities
+urllib3>=2.0.0
