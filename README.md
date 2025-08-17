@@ -1,111 +1,171 @@
+# Meeting + OBS + Zoom Launcher
 
-<!--
-**AshanBaig/AshanBaig** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A comprehensive Python application that automates joining Zoom meetings with OBS virtual camera integration. This tool handles all the complex popup management and browser automation to seamlessly join meetings.
 
-Here are some ideas to get you started:
+## Features
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-![logo](https://github.com/AshanBaig/AshanBaig/blob/main/1708704132902.jpeg)
-<h1 align="center">Hi there, I'm Ashan Baig 👋</h1>
-<h3 align="center">An Undergrad Computer Systems Engineer | Python | Learning DSA | C Language</h3>
-## About Me
+- **Automated Zoom Meeting Joining**: Handles all browser popups and protocol dialogs
+- **OBS Virtual Camera Integration**: Automatically sets up and starts OBS virtual camera with your video
+- **Smart Popup Handling**: Multiple strategies to handle OS-level and browser popups
+- **Flexible Audio/Video Settings**: Choose initial microphone and camera states
+- **Meeting Scheduling**: Join immediately or schedule for later
+- **Robust Error Handling**: Comprehensive error management with detailed status updates
+- **Clean UI**: Modern, organized interface with color-coded status updates
 
-<img align = "right" alt = "coding" width = "300"  src = "https://github.com/qasim-you/qasim-you/blob/main/img.gif">
+## Prerequisites
 
-- 🌏 Based in Karachi, Pakistan
-- 🔭 Educator specializing in Computer Science for 11th and 12th grades
-- 🏗️ Currently expanding my skills in Data Structures and Algorithms (DSA) and web development
-- 🌱 Exploring cutting-edge fields such as AI, cybersecurity, and networking
-- 💬 Actively involved in coding competitions and looking forward to more opportunities
-- 📫 Contact me at: ashanbaig18@gmail.com
+### Required Software
 
-<be>
-<be>
-<be>
-<be>
-    
-# Tech Stack
+1. **Python 3.8+** - Download from [python.org](https://python.org)
+2. **Google Chrome** - Latest version
+3. **OBS Studio** - Download from [obsproject.com](https://obsproject.com)
+4. **ChromeDriver** - Download from [chromedriver.chromium.org](https://chromedriver.chromium.org)
+   - Make sure ChromeDriver version matches your Chrome version
+   - Add ChromeDriver to your system PATH
 
-<div>
-<!-- Python -->
-<img src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+### OBS Setup
 
-<!-- VS Code -->
-<img src="https://github.com/devicons/devicon/blob/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/>
+1. Install OBS Studio
+2. Enable WebSocket Server:
+   - Go to **Tools** → **WebSocket Server Settings**
+   - Check **Enable WebSocket server**
+   - Set port to `4455` (default)
+   - Set password to `ashanb` (or modify the code)
+   - Click **OK**
 
-<!-- LeetCode -->
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="leetcode" width="40" height="40"/>
+## Installation
 
-<!-- HTML -->
-<img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" alt="html" width="40" height="40"/>
+1. **Clone or download this repository**
 
-<!-- CSS -->
-<img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" alt="css" width="40" height="40"/>
+2. **Install Python dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-<!-- SQL -->
-<img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg" alt="sql" width="40" height="40"/>
-          
-</div>
+3. **Verify ChromeDriver installation:**
+   ```bash
+   chromedriver --version
+   ```
 
-<h2 align="left">Connect With Me:</h2>
-<p align="center">
-<a href="https://www.linkedin.com/in/ashanbaig/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="in/ashanbaig/" height="70" width="80" /></a>
-<a href="https://leetcode.com/u/AshanBaig/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="AshanBaig" height="70" width="80" /></a>
-<a href="https://www.facebook.com/profile.php?id=100076836001049" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="profile.php?id=100076836001049" height="70" width="80" /></a>
-</p>
-<br /> 
+## Usage
 
-<h2 align="left">Languages and Tools:</h2>
-<p align="center">
-    <a href="https://www.python.org" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="80" height="80"/>
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="80" height="80"/>
-    </a>
-    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="80" height="80"/>
-    </a>
-    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="80" height="80"/>
-    </a>
-    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="80" height="80"/>
-    </a>
-    <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/flask/flask-original-wordmark.svg" alt="flask" width="80" height="80"/>
-    </a>
-    <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="80" height="80"/>
-    </a>
-</p>
+1. **Run the application:**
+   ```bash
+   python meeting_app_cleaned.py
+   ```
 
-## Github:
- <br>
-  <p align="center">
-   <a href="https://github.com/AshanBaig"> 
-     <img width="70%" src="https://github-readme-streak-stats.herokuapp.com/?user=AshanBaig&theme=dark&hide_border=true" /> 
-   </a>  
- </p>
-<p align="center">
-    <a href="https://github.com/AshanBaig">
-<img height="180em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=AshanBaig&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide_border=true"/>
-    </a>
-</p>
-<p align="center">
-   <a href="https://github.com/AshanBaig"> 
-     <img height="180em" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=AshanBaig&langs_count=12&layout=compact&langs_count=8&theme=dark&include_all_commits=true&count_private=true&hide_border=true" />
-   </a>  
- </p>
+2. **Configure your meeting:**
+   - Enter your Zoom meeting URL
+   - Choose initial microphone and camera settings
+   - If using virtual camera, select a video file
+   - Choose to join now or schedule for later
 
-<br>
+3. **Start the workflow:**
+   - Click "Start Meeting Flow"
+   - The app will automatically:
+     - Launch OBS (if needed)
+     - Set up virtual camera (if enabled)
+     - Open browser and navigate to Zoom
+     - Handle all popups automatically
+     - Join the meeting
+     - Apply your audio/video preferences
 
-<p align="center"> <img align="center" src="https://leetcard.jacoblin.cool/AshanBaig?theme=dark&font=Encode%20Sans%20Semi%20Expanded&ext=heatmap" alt="LeetCode Stats"/></p>
+## How It Works
+
+### Popup Handling Strategy
+
+The app uses multiple strategies to handle popups reliably:
+
+1. **Keyboard Shortcuts**: Uses Enter, Space, Alt+O to activate default buttons
+2. **Windows Automation**: Uses pywinauto to find and click specific UI elements
+3. **Browser Automation**: JavaScript and Selenium to handle web-based popups
+4. **Screen Recognition**: Falls back to image recognition when available
+
+### OBS Integration
+
+- Automatically launches OBS Studio if not running
+- Connects to OBS WebSocket server
+- Creates/updates a scene with your selected video
+- Scales and centers video to fit canvas
+- Starts virtual camera for use in Zoom
+
+### Meeting Join Process
+
+1. **Cookie Consent**: Automatically accepts cookie banners
+2. **Protocol Popup**: Handles "Open Zoom Meetings" browser popup
+3. **App Detection**: Waits for Zoom app to launch
+4. **Fallback**: Uses web-based join if app doesn't launch
+5. **Settings**: Applies your microphone and camera preferences
+
+## Troubleshooting
+
+### Common Issues
+
+**"OBS Studio not found"**
+- Install OBS Studio from the official website
+- Make sure it's installed in the default location
+
+**"Cannot connect to OBS WebSocket"**
+- Open OBS Studio
+- Enable WebSocket server in Tools → WebSocket Server Settings
+- Check that port is 4455 and password matches
+
+**"ChromeDriver not found"**
+- Download ChromeDriver matching your Chrome version
+- Add ChromeDriver to your system PATH
+- Restart command prompt/terminal
+
+**"Popup not handled"**
+- The app uses multiple strategies and should handle most popups
+- Try running as administrator if on Windows
+- Check that Chrome is up to date
+
+### Advanced Configuration
+
+You can modify these settings in the code:
+
+```python
+# OBS WebSocket settings
+self.obs_websocket_host = "localhost"
+self.obs_websocket_port = 4455
+self.obs_websocket_password = "ashanb"
+
+# Scene and source names
+self.obs_scene_name = "AutoScene"
+self.obs_media_name = "AutoMedia"
+```
+
+## Features in Detail
+
+### Status Updates
+- **Green**: Success/completed actions
+- **Red**: Errors that need attention  
+- **Blue**: Informational messages
+- **Yellow**: Work in progress
+
+### Error Recovery
+- Automatic retry mechanisms for network issues
+- Graceful fallbacks when primary methods fail
+- Comprehensive cleanup on errors
+
+### Security
+- Disables automation detection in Chrome
+- Uses legitimate browser automation (not hacking)
+- No credential storage or transmission
+
+## Support
+
+If you encounter issues:
+
+1. Check the status messages for specific error details
+2. Ensure all prerequisites are installed correctly
+3. Try running as administrator (Windows)
+4. Check that your Zoom link is valid and accessible
+
+## License
+
+This project is for educational and personal use. Respect Zoom's terms of service when using automated tools.
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
